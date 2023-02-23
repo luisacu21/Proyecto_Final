@@ -1,0 +1,100 @@
+{% extends "Resto/padre.html" %}
+
+
+{% load static %}
+
+{% block titulo %}
+
+ Bienvenidos a Sabores Latinos
+
+{% endblock %} 
+
+
+{% block titulo1 %}
+
+Sabores Latinos
+
+
+{% endblock %} 
+
+
+{% block descripcion1 %}
+
+{% endblock %} 
+
+{% block titulo3 %}
+
+Reservaciones
+
+{% endblock %}
+
+{% block descripcion2 %}
+
+<body>
+
+    <ul>
+   
+        {% for reservacion in object_list %}
+        <table>
+         <li>
+
+            <table>
+                <tr>
+                  <th>Nombre</th>
+                  <td>{{ reservacion.nombre }}</td>
+                </tr>
+                <tr>
+                  <th>DNI</th>
+                  <td>{{ reservacion.DNI }}</td>
+                </tr>
+                <tr>
+                  <th>Mesa</th>
+                  <td>{{ reservacion.numero_mesa }}</td>
+                </tr>
+                <tr>
+                  <th>Invitados</th>
+                  <td>{{ reservacion.num_invitados }}</td>
+                </tr>
+                <tr>
+                  <th>Fecha</th>
+                  <td>{{ reservacion.fecha_de_reservacion }}</td>
+                </tr>
+              </table>
+              
+              <p>
+                <ul>
+                  <li><a href="{% url 'Detail' reservacion.id %}">Ver Reserva</a></li>
+                  <li><a href="{% url 'Edit' reservacion.id %}">Editar Reserva</a></li>
+                  <li><a href="{% url 'Delete' reservacion.id %}">Eliminar Reserva</a></li>
+                </ul>
+              </p>
+                 
+                   
+        
+             </p>
+             
+
+         </li>
+   
+        {% endfor %}
+
+    </ul>
+    
+
+    <br>
+
+    <a href= "{% url 'nueva Reserva' %}"> Crear Reserva </a>
+
+{% endblock %} 
+
+
+
+
+   
+
+
+
+  
+
+</body>
+</html>

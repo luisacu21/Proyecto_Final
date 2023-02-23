@@ -1,0 +1,91 @@
+{% extends "Resto/padre.html" %}
+
+
+{% load static %}
+
+{% block titulo %}
+
+ {{mensaje}}
+
+{% endblock %} 
+
+{% block mensaje%}
+
+Sabores Latinos
+
+{% endblock %} 
+
+{% block titulo1 %}
+
+Ingredientes de Primera
+
+
+{% endblock %} 
+
+{% block titulo2 %}
+
+Gastronomia del Sur
+
+
+{% endblock %} 
+
+
+{% block descripcion1 %}
+
+Disfruta de nuestros platos latinos, no te arrepentiras de degustar los platos mas populares de latinoamerica en solo lugar!
+
+{% endblock %} 
+
+{% block titulo3 %}
+
+Nuestro premio
+
+{% endblock %}
+
+
+{% block titulo4 %}
+
+Para ti
+
+{% endblock %} 
+
+{% block descripcion2 %}
+
+Regalarte un momento placentero junto a sus amigos o familiares. Degustando la gastronomia mas variada de america.
+
+{% endblock %} 
+
+
+{% block busqueda %}
+
+<form action= "/Resto/resultados/" method= "GET" >
+
+    <input type= "text" name= "nombre" id= "nombre" >
+
+    <input type= "submit" value= "Buscar Reservaciones">
+
+</form>
+
+
+
+{% if reserva %}
+
+<ul>
+    {% for nombre in reserva %}
+
+    <li style="color: white;">Nombre: {{ nombre.nombre }}</li>
+    <li style="color: white;">DNI: {{ nombre.DNI }}</li>
+    <li style="color: white;">Mesa: {{ nombre.numero_mesa }}</li>
+    <li style="color: white;">Invitados: {{ nombre.num_invitados }}</li>
+    <li style="color: white;">Fecha: {{ nombre.fecha_de_reservacion }}</li>
+
+    {% endfor %}
+        
+    </ul>
+{% else %}
+   
+{% endif %}
+
+
+{% endblock %} 
+

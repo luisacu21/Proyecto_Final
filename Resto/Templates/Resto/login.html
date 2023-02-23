@@ -1,0 +1,71 @@
+{% extends "Resto/padre.html" %}
+
+
+{% load static %}
+
+{% block titulo %}
+
+Aqui puedes iniciar sesion!
+
+{% endblock %} 
+
+{% block mensaje%}
+
+
+
+{% endblock %} 
+
+{% block titulo1 %}
+
+Ingredientes de Primera
+
+
+{% endblock %} 
+
+{% block titulo2 %}
+
+Gastronomia del Sur
+
+
+{% endblock %} 
+
+
+{% block descripcion1 %}
+
+<form action="" method= "POST" > {% csrf_token %}
+
+    
+
+        {{formulario.as_p}}
+
+
+    
+
+    <button type= "submit" >Iniciar Sesion</button>
+
+
+
+</form>
+
+{% endblock %} 
+
+{% block titulo3 %}
+
+Nuestro premio
+
+{% endblock %}
+
+
+{% block titulo4 %}
+
+Para ti
+
+{% endblock %} 
+
+{% block descripcion2 %}
+
+Regalarte un momento placentero junto a sus amigos o familiares. Degustando la gastronomia mas variada de america.
+
+{% endblock %} 
+
+

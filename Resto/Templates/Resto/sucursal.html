@@ -1,0 +1,66 @@
+{% extends "Resto/padre.html" %}
+
+
+{% load static %}
+
+{% block titulo %}
+
+ Bienvenidos a Sabores Latinos
+
+{% endblock %} 
+
+{% block mensaje%}
+
+Elige la Sucursal
+
+{% endblock %} 
+
+{% block titulo1 %}
+
+Estamos en las siguientes ciudades
+
+
+{% endblock %} 
+
+
+{% block descripcion1 %}
+
+Buenos aires, Argentina / Lima, Peru / Bogota, Colombia / Sao Paulo, Brasil
+<form action="" method= "POST" > {% csrf_token %}
+
+    <table>
+
+        {{form2.as_table}}
+
+
+    <table>
+
+    <input type= "submit" value= "Enviar">
+
+
+
+</form>
+{% endblock %} 
+
+{% block titulo3 %}
+
+TIP Ingrediente
+
+{% endblock %}
+
+
+{% block titulo4 %}
+
+CAMOTE
+
+{% endblock %} 
+
+{% block descripcion2 %}
+
+El camote es un tubérculo con alto valor nutricional rico en vitaminas y minerales.
+Mayormente consumido en la region andina de Suramerica.
+
+{% endblock %} 
+
+
+

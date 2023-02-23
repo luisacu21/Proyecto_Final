@@ -1,0 +1,55 @@
+{% extends "Resto/padre.html" %}
+
+
+{% load static %}
+
+{% block titulo %}
+
+ Bienvenidos a Sabores Latinos
+
+{% endblock %} 
+
+
+{% block titulo1 %}
+
+Sabores Latinos
+
+
+{% endblock %} 
+
+
+{% block descripcion1 %}
+
+<form action="" method= "POST"> {% csrf_token %}
+
+    <table>
+
+        {{form.as_table}}
+
+
+    <table>
+
+    <input type= "submit" value= "Reservar">
+
+
+
+</form>
+{% endblock %} 
+
+
+{% block titulo4 %}
+
+DULCE DE LECHE
+
+{% endblock %} 
+
+{% block descripcion2 %}
+
+El dulce de leche es un postre tradicional de América Latina, que se prepara a partir de leche y azúcar, y se cocina lentamente hasta que se espese y tome una textura cremosa y caramelizada. El dulce de leche se utiliza como ingrediente en una gran variedad de postres, como alfajores, flanes, helados, y tartas. También se puede comer solo, directamente del frasco o untado en pan o galletas.
+
+{% endblock %} 
+
+
+
+
+   

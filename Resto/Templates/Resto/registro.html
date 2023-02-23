@@ -1,0 +1,52 @@
+{% extends "Resto/padre.html" %}
+
+
+{% load static %}
+
+{% block titulo %}
+
+ Bienvenidos a Sabores Latinos
+
+{% endblock %} 
+
+{% block mensaje%}
+
+Registrese
+
+{% endblock %} 
+
+{% block titulo1 %}
+
+Abiertos 
+
+
+{% endblock %} 
+
+
+{% block descripcion1 %}
+
+Martes a Domingos desde las 20:00 hrs hasta 00:00 
+
+<form action="" method= "POST" > {% csrf_token %}
+
+    
+
+    {{formulario.as_p}}
+
+
+
+
+    <button type= "submit" >Registrarse</button>
+
+
+
+</form>
+
+{% endblock %} 
+
+
+
+
+
+
+

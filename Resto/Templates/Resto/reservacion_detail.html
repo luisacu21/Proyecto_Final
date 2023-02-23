@@ -1,0 +1,55 @@
+{% extends "Resto/padre.html" %}
+
+
+{% load static %}
+
+{% block titulo %}
+
+ Bienvenidos a Sabores Latinos
+
+{% endblock %} 
+
+
+{% block titulo1 %}
+
+Sabores Latinos
+
+
+{% endblock %} 
+
+
+{% block descripcion1 %}
+
+<body>
+   
+    <p>Nombre: <i>{{ reservacion.nombre }}</i></p>
+    <p>DNI: <i>{{ reservacion.DNI }}</i></p>
+    <p>Mesa: <i>{{ reservacion.numero_mesa}}</i></p>
+    <p>Invitados: <i>{{ reservacion.num_invitados}}</i></p>
+    <p>Fecha: <i>{{ reservacion.fecha_de_reservacion }}</i></p>
+
+    <a  href= "{% url 'ReservaLeer' %}"> Regresar</a>
+   
+
+</body>
+
+{% endblock %} 
+
+{% block titulo4 %}
+
+MANGO
+
+{% endblock %} 
+
+{% block descripcion2 %}
+
+El mango es una fruta muy apreciada por su sabor dulce y jugoso, y se utiliza en una gran variedad de platos, tanto dulces como salados.
+
+{% endblock %} 
+
+
+
+
+   
+
+

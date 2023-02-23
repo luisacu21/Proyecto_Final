@@ -1,0 +1,53 @@
+{% extends "Resto/padre.html" %}
+
+
+{% load static %}
+
+{% block titulo %}
+
+ Bienvenidos a Sabores Latinos
+
+{% endblock %} 
+
+
+{% block titulo1 %}
+
+Pulse aceptar para eliminar su reserva
+
+
+{% endblock %} 
+
+
+{% block descripcion1 %}
+
+<form action="" method= "POST"> {% csrf_token %}
+
+    <p> Esta seguro que desea eliminar la Reserva? </p>
+
+
+
+    <input type= "submit" value= "Aceptar">
+
+
+
+</form>
+
+{% endblock %} 
+
+{% block titulo4 %}
+
+LULO
+
+{% endblock %} 
+
+{% block descripcion2 %}
+
+El lulo es una fruta originaria de América del Sur, que crece en un arbusto de hoja perenne. La fruta es de forma ovalada y tiene un diámetro de aproximadamente 5 cm. Su piel es dura y gruesa, de color verde amarillento, y su pulpa es de color verde y está dividida en gajos. El sabor del lulo es dulce y ligeramente ácido, y tiene un aroma muy característico.
+
+
+{% endblock %} 
+
+
+
+
+   
