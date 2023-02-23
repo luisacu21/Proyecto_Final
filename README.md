@@ -9,8 +9,6 @@ pip install django para instalar django
 
 moverse a la carpeta del proyecto ejecutando
 
-cd Perdomo-Steivi-master
-
 Ejecutar
 
 python manage.py runserver para levantar el servidor
