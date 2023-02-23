@@ -16,3 +16,5 @@ python manage.py runserver para levantar el servidor
 Abrir el navegador en la dirección http://127.0.0.1:8000/
 
 Para acceder al panel de administrador usar el Usuario Steivi y el Pass coder12345
+
+Link para el video: https://drive.google.com/drive/u/0/folders/1N_Oa9ZzIBovYqn5IZHIPg0sGj0RByHsZ
